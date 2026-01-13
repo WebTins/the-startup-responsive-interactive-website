@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+    font-family: 'inter', sans-serif;
+    list-style: none;
+}
+
 /* Custom properties */
 :root {
     /* Kleuren */
@@ -31,4 +39,51 @@
 @font-face {
     font-family: 'inter';
     src: url(/fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brand-color);
+    color: var(--content-light);
+    height: 45px;
+    
+    .more-info {
+        color: var(--content-light);
+        margin-left: 0.3rem;
+    }
+}
+
+.first-nav {
+
+}
+
+.hamburger-icon {
+    position: relative;
+    left: -2.5rem;
+    border-style: none;
+    cursor: pointer;
+    padding: 1em;
+    background-color: transparent;
+}
+
+.search-locations, .help {
+    display: none;
+}
+
+.hamburger-list {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-menu {
+    display: none;
 }
