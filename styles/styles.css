@@ -57,6 +57,14 @@ aside {
 
 .first-nav {
 
+    .search-locations-button, .help-button {
+        display: none;
+    }
+
+    .close-menu {
+    display: none;
+}
+
 }
 
 .hamburger-icon {
@@ -68,9 +76,7 @@ aside {
     background-color: transparent;
 }
 
-.search-locations, .help {
-    display: none;
-}
+
 
 .hamburger-list {
     display: none;
@@ -84,6 +90,13 @@ aside {
     align-items: center;
 }
 
-.close-menu {
-    display: none;
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button, .cart-button {
+    background-color: transparent;
+    color: var(--content-dark);
 }
