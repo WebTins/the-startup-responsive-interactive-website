@@ -1,115 +1,172 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decathlon</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
     <header>
 
-        <aside>Sport en ontvang een €5 giftcard. 
-            <a href ="https://www.decathlon.nl/goede-voornemens-membership-activatie_lp-6SCROS?opeco=opeco:HP_GLOBAL-BANNER_DEFAULT_nl_n-membership-earn-points_nc-goede-voornemens_me-extra-points_f-lo_dc-web_spu-msp_pt-all_d-260105-260202&type=opeco">
+        <aside>Sport en ontvang een €5 giftcard.
+            <a class="more-info"
+                href="https://www.decathlon.nl/goede-voornemens-membership-activatie_lp-6SCROS?opeco=opeco:HP_GLOBAL-BANNER_DEFAULT_nl_n-membership-earn-points_nc-goede-voornemens_me-extra-points_f-lo_dc-web_spu-msp_pt-all_d-260105-260202&type=opeco">
                 Meer info</a>
-            </aside>
+        </aside>
 
         <!-- Navigatie naar bepaalde categoriën-->
         <nav class="first-nav">
 
-            <!-- Hamburger menu (Alleen voor telefoon en tablet) -->
-            <button class="hamburger-icon">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" stroke-width="1.5" aria-hidden="true"><path d="M2.75 12H21.25M2.75 5.75H21.25M2.75 18.25H21.25" stroke="currentColor" stroke-linecap="square"></path></svg>
-            </button>
+            <ul>
+                <li>
+                    <button class="hamburger-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="25"
+                            stroke-width="1.5" aria-hidden="true">
+                            <path d="M2.75 12H21.25M2.75 5.75H21.25M2.75 18.25H21.25" stroke="currentColor"
+                                stroke-linecap="square"></path>
+                        </svg>
+                    </button>
 
-            <!-- Logo Decathlon waar gebruikers op kunnen klikken om naar de homepagina te kunnen navigeren -->
-            <a href="https://www.decathlon.nl/">
-                <img alt="Decathlon-logo" class="logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTg4IiBoZWlnaHQ9IjI4IiB2aWV3Qm94PSIwIDAgMTg4IDI4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik01Ny45MTA4IDIzLjhINzEuMTU0OFYxOS41NDRINjIuOTUwOFYxNS45NzRINzAuMjE2OVYxMi4wMTJINjIuOTUwOFY4LjQ0Mkg3MS4xNTQ4VjQuMkg1Ny45MTA4VjIzLjhaTTg3LjU5MDkgMTUuMzU4Qzg1LjY3MjggMTguNDEgODMuODEwOCAxOS42ODQgODEuNDE2OCAxOS42ODRDNzguMzA4OCAxOS42ODQgNzYuNTAyOCAxNy41IDc2LjUwMjggMTMuNzA2Qzc2LjUwMjggMTAuMTA4IDc4LjE2ODggOC4zMTYgODAuNzMwOSA4LjMxNkM4Mi40MjQ4IDguMzE2IDgzLjgyNDggOS4wNzIgODQuMjU4OSAxMS41OTJIODkuMjk4OUM4OC43NTI4IDYuNzkgODUuNjg2OSAzLjgwOCA4MC43ODY4IDMuODA4Qzc1LjEwMjggMy44MDggNzEuMzY0OCA3LjgyNTk5IDcxLjM2NDggMTMuOTg2QzcxLjM2NDggMjAuMTg4IDc1LjEwMjggMjQuMTkyIDgxLjI0ODggMjQuMTkyQzg1LjI2NjkgMjQuMTkyIDg3Ljk5NjggMjIuNTEyIDg5LjgwMjggMjAuMjQ0SDk2LjY3NjhWMjMuOEgxMDEuNjg5VjQuMkg5NC41NzY5TDg3LjU5MDkgMTUuMzU4Wk05Ni42NzY4IDE2LjMxSDkyLjIzODhMOTYuNjc2OCA5LjFWMTYuMzFaTTQ3LjE1ODggNC4ySDM5Ljc5NDhWMjMuOEg0Ny4xNTg4QzUyLjk5NjkgMjMuOCA1Ni43NjI4IDE5Ljk1IDU2Ljc2MjggMTRDNTYuNzYyOCA4LjA1IDUyLjk5NjkgNC4yIDQ3LjE1ODggNC4yWk00Ny4wODg4IDE5LjU0NEg0NC44MzQ4VjguNDQySDQ3LjA4ODhDNTAuMDAwOCA4LjQ0MiA1MS42Mzg4IDEwLjUgNTEuNjM4OCAxNEM1MS42Mzg4IDE3LjQ4NiA1MC4wMDA4IDE5LjU0NCA0Ny4wODg4IDE5LjU0NFpNMTU5LjUzNyAzLjgwOEMxNTMuNjE1IDMuODA4IDE0OS42MzkgNy44MjYgMTQ5LjYzOSAxNEMxNDkuNjM5IDIwLjE3NCAxNTMuNjE1IDI0LjE5MiAxNTkuNTM3IDI0LjE5MkMxNjUuNDczIDI0LjE5MiAxNjkuNDM1IDIwLjE3NCAxNjkuNDM1IDE0QzE2OS40MzUgNy44MjYwMSAxNjUuNDczIDMuODA4IDE1OS41MzcgMy44MDhaTTE1OS41MzcgMTkuNjg0QzE1Ni42MjUgMTkuNjg0IDE1NC43OTEgMTcuNzM4IDE1NC43OTEgMTRDMTU0Ljc5MSAxMC4yNjIgMTU2LjYyNSA4LjMxNiAxNTkuNTM3IDguMzE2QzE2Mi40NjMgOC4zMTYgMTY0LjI4MyAxMC4yNjIgMTY0LjI4MyAxNEMxNjQuMjgzIDE3LjczOCAxNjIuNDYzIDE5LjY4NCAxNTkuNTM3IDE5LjY4NFpNMTAyLjk0OSA4LjQ0MkgxMDcuODkxVjIzLjhIMTEyLjkzMVY4LjQ0MkgxMTcuODczVjQuMkgxMDIuOTQ5TDEwMi45NDkgOC40NDJaTTE4Mi4zMDEgNC4yVjE0Ljk5NEwxNzUuODA1IDQuMkgxNzAuNTgzVjIzLjhIMTc1LjQ1NVYxMi41NThMMTgyLjIxNyAyMy44SDE4Ny4xNzNWNC4yTDE4Mi4zMDEgNC4yWk0xNDIuNDk5IDQuMkgxMzcuNDU5VjIzLjhIMTUwLjEwMVYxOS41NThIMTQyLjQ5OVY0LjJaTTEzMC45NjMgMTEuNjc2SDEyNC4xNzNWNC4ySDExOS4xMzNWMjMuOEgxMjQuMTczVjE1LjkwNEgxMzAuOTYzVjIzLjhIMTM2LjAwM1Y0LjJIMTMwLjk2M1YxMS42NzZaIiBmaWxsPSIjMzY0M2JhIj48L3BhdGg+PHBhdGggZD0iTTI1LjU3MTEgMEMxNC42MjY3IDAgMS4wMTMwOSAxMS4zMjM2IDEuMDEzMDkgMjAuNzA4NUMxLjAxMzA5IDI1LjU1NTQgNC43MzYxMiAyOCA5LjY1MzMzIDI4QzEzLjI2NCAyOCAxNy42MzMzIDI2LjY3OTQgMjEuODQ4IDI0LjEzNjVWNS40MDg5M0MyMC43MjQxIDcuMzMzNjYgMTUuNDQxNiAxNS4wODg4IDExLjE5ODcgMTkuMjE5M0M5LjAzNTE4IDIxLjMyNjYgNy4zMjExOCAyMi4yMzk4IDUuODQ2MDIgMjIuMjM5OEM0LjE4ODIxIDIyLjIzOTggMy40MDE0NiAyMS4xMTU5IDMuNDAxNDYgMTkuNDQ0MUMzLjQwMTQ2IDExLjg1NzUgMTYuMTcyMiAxLjk5NDk4IDI0LjYyOTggMS45OTQ5OEMyOC4xMTQgMS45OTQ5OCAzMC4zNjE4IDMuNTQwMzkgMzAuMzYxOCA2LjU0NjkyQzMwLjM2MTggOS4zMDA1NSAyOC40OTMzIDEyLjc1NjYgMjUuMzA0MSAxNS45NDU4VjIxLjc0ODFDMzAuODY3NiAxNy4zNTA3IDM0LjE5NzIgMTEuNzQ1MSAzNC4xOTcyIDcuMjIxMjdDMzQuMTk3MiAyLjQ1ODYgMzAuNDg4MyAwIDI1LjU3MTEgMFoiIGZpbGw9IiMzNjQzYmEiPjwvcGF0aD48L3N2Zz4=">
-            </a>
+                    <!-- Logo Decathlon waar gebruikers op kunnen klikken om naar de homepagina te kunnen navigeren -->
+                    <a href="https://www.decathlon.nl/">
+                        <svg width="188" viewBox="0 0 188 28" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M57.9108 23.8H71.1548V19.544H62.9508V15.974H70.2169V12.012H62.9508V8.442H71.1548V4.2H57.9108V23.8ZM87.5909 15.358C85.6728 18.41 83.8108 19.684 81.4168 19.684C78.3088 19.684 76.5028 17.5 76.5028 13.706C76.5028 10.108 78.1688 8.316 80.7309 8.316C82.4248 8.316 83.8248 9.072 84.2589 11.592H89.2989C88.7528 6.79 85.6869 3.808 80.7868 3.808C75.1028 3.808 71.3648 7.82599 71.3648 13.986C71.3648 20.188 75.1028 24.192 81.2488 24.192C85.2669 24.192 87.9968 22.512 89.8028 20.244H96.6768V23.8H101.689V4.2H94.5769L87.5909 15.358ZM96.6768 16.31H92.2388L96.6768 9.1V16.31ZM47.1588 4.2H39.7948V23.8H47.1588C52.9969 23.8 56.7628 19.95 56.7628 14C56.7628 8.05 52.9969 4.2 47.1588 4.2ZM47.0888 19.544H44.8348V8.442H47.0888C50.0008 8.442 51.6388 10.5 51.6388 14C51.6388 17.486 50.0008 19.544 47.0888 19.544ZM159.537 3.808C153.615 3.808 149.639 7.826 149.639 14C149.639 20.174 153.615 24.192 159.537 24.192C165.473 24.192 169.435 20.174 169.435 14C169.435 7.82601 165.473 3.808 159.537 3.808ZM159.537 19.684C156.625 19.684 154.791 17.738 154.791 14C154.791 10.262 156.625 8.316 159.537 8.316C162.463 8.316 164.283 10.262 164.283 14C164.283 17.738 162.463 19.684 159.537 19.684ZM102.949 8.442H107.891V23.8H112.931V8.442H117.873V4.2H102.949L102.949 8.442ZM182.301 4.2V14.994L175.805 4.2H170.583V23.8H175.455V12.558L182.217 23.8H187.173V4.2L182.301 4.2ZM142.499 4.2H137.459V23.8H150.101V19.558H142.499V4.2ZM130.963 11.676H124.173V4.2H119.133V23.8H124.173V15.904H130.963V23.8H136.003V4.2H130.963V11.676Z" fill="#3643ba"></path><path d="M25.5711 0C14.6267 0 1.01309 11.3236 1.01309 20.7085C1.01309 25.5554 4.73612 28 9.65333 28C13.264 28 17.6333 26.6794 21.848 24.1365V5.40893C20.7241 7.33366 15.4416 15.0888 11.1987 19.2193C9.03518 21.3266 7.32118 22.2398 5.84602 22.2398C4.18821 22.2398 3.40146 21.1159 3.40146 19.4441C3.40146 11.8575 16.1722 1.99498 24.6298 1.99498C28.114 1.99498 30.3618 3.54039 30.3618 6.54692C30.3618 9.30055 28.4933 12.7566 25.3041 15.9458V21.7481C30.8676 17.3507 34.1972 11.7451 34.1972 7.22127C34.1972 2.4586 30.4883 0 25.5711 0Z" fill="#3643ba"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="icons-nav">
+                    <!-- Zoeken naar vestigingen -->
+                    <a class="search-locations" href="https://www.decathlon.nl/store-locator">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            stroke-width="1.5" aria-hidden="true">
+                            <path
+                                d="M7.79297 12.9664V5.56748L21.2162 5.5675V13.0649L7.79297 13.0649V12.9664ZM7.79297 12.9664V17.9903M7.79297 8.57318L2.78662 8.57321V17.9903H16.2148V12.9664M21.2162 12.9664V18.7783"
+                                stroke="currentColor"></path>
+                        </svg>
+                    </a>
 
-            <!-- Zoeken naar vestigingen -->
-            <a href="https://www.decathlon.nl/store-locator">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" stroke-width="1.5" aria-hidden="true">
-                    <path d="M7.79297 12.9664V5.56748L21.2162 5.5675V13.0649L7.79297 13.0649V12.9664ZM7.79297 12.9664V17.9903M7.79297 8.57318L2.78662 8.57321V17.9903H16.2148V12.9664M21.2162 12.9664V18.7783" stroke="currentColor"></path>
-                </svg>
-            </a>
+                    <!-- Knop naar hulp (pop up) -->
+                    <button class="help">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            stroke-width="1.5" aria-hidden="true" data-rtl-behavior="mirror"
+                            style="transform: scale(var(--vp-icon-rtl-scale, 1), 1);">
+                            <path
+                                d="M11.6 14.7C11.6 14.2 11.7 13.7 12.1 13.3C12.6 12.7 13.3 12.5 13.8 12C14.3 11.5 14.6 10.8 14.6 10.2C14.6 8.79999 13.4 7.59999 12 7.59999C10.6 7.59999 9.50005 8.69999 9.40005 9.99999C9.40005 10.1 9.40005 10.4 9.40005 10.4M21.2001 12C21.2001 17.081 17.0811 21.2 12 21.2C6.91903 21.2 2.80005 17.081 2.80005 12C2.80005 6.91897 6.91903 2.79999 12 2.79999C17.0811 2.79999 21.2001 6.91897 21.2001 12Z"
+                                stroke="currentColor"></path>
+                            <path
+                                d="M11.6001 17.5C12.0971 17.5 12.5001 17.0971 12.5001 16.6C12.5001 16.103 12.0971 15.7 11.6001 15.7C11.103 15.7 10.7001 16.103 10.7001 16.6C10.7001 17.0971 11.103 17.5 11.6001 17.5Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </button>
+                    <!-- Inloggen/Aanmelden-->
+                    <a
+                        href="https://login.decathlon.net/?client_id=40491109-1269-4b2f-8dd6-aae3977f8f4b&ui_locales=nl_NL#/sign-in">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            stroke-width="1.5">
+                            <path
+                                d="M5 22C5 16.1 8.1 12.3 12 12.2C15.9 12.1 19 16 19 21.9M12 2.79999C10.1 2.79999 8.5 4.39999 8.5 6.29999C8.5 8.19999 10.1 9.79999 12 9.79999C13.9 9.79999 15.5 8.19999 15.5 6.29999C15.5 4.39999 13.9 2.79999 12 2.79999Z"
+                                stroke="currentColor"></path>
+                        </svg>
+                    </a>
 
-            <!-- Knop naar hulp (pop up) -->
-            <button> 
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" stroke-width="1.5" aria-hidden="true" data-rtl-behavior="mirror" style="transform: scale(var(--vp-icon-rtl-scale, 1), 1);">
-                    <path d="M11.6 14.7C11.6 14.2 11.7 13.7 12.1 13.3C12.6 12.7 13.3 12.5 13.8 12C14.3 11.5 14.6 10.8 14.6 10.2C14.6 8.79999 13.4 7.59999 12 7.59999C10.6 7.59999 9.50005 8.69999 9.40005 9.99999C9.40005 10.1 9.40005 10.4 9.40005 10.4M21.2001 12C21.2001 17.081 17.0811 21.2 12 21.2C6.91903 21.2 2.80005 17.081 2.80005 12C2.80005 6.91897 6.91903 2.79999 12 2.79999C17.0811 2.79999 21.2001 6.91897 21.2001 12Z" stroke="currentColor"></path><path d="M11.6001 17.5C12.0971 17.5 12.5001 17.0971 12.5001 16.6C12.5001 16.103 12.0971 15.7 11.6001 15.7C11.103 15.7 10.7001 16.103 10.7001 16.6C10.7001 17.0971 11.103 17.5 11.6001 17.5Z" fill="currentColor"></path>
-                </svg>
-            </button>
-
-            <!-- Inloggen/Aanmelden-->
-            <a href="https://login.decathlon.net/?client_id=40491109-1269-4b2f-8dd6-aae3977f8f4b&ui_locales=nl_NL#/sign-in">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" stroke-width="1.5">
-                    <path d="M5 22C5 16.1 8.1 12.3 12 12.2C15.9 12.1 19 16 19 21.9M12 2.79999C10.1 2.79999 8.5 4.39999 8.5 6.29999C8.5 8.19999 10.1 9.79999 12 9.79999C13.9 9.79999 15.5 8.19999 15.5 6.29999C15.5 4.39999 13.9 2.79999 12 2.79999Z" stroke="currentColor"></path>
-                </svg>
-            </a>
-
-            <!-- Winkelmand -->
-            <a href="https://www.decathlon.nl/checkout/cart">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" stroke-width="1.5" aria-hidden="true">
-                    <path d="M8.20002 8.49999C8.20002 4.99999 9.90002 2.79999 12 2.79999C14.1 2.79999 15.8 5.09999 15.8 8.49999M5.00002 20.5C5.10002 21 5.50002 21.3 6.00002 21.3H18C18.5 21.3 18.9 21 19 20.5L21.1 10.8H2.90002L5.00002 20.5Z" stroke="currentColor"></path>
-                </svg>
-            </a>
+                    <!-- Winkelmand -->
+                    <a href="https://www.decathlon.nl/checkout/cart">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            stroke-width="1.5" aria-hidden="true">
+                            <path
+                                d="M8.20002 8.49999C8.20002 4.99999 9.90002 2.79999 12 2.79999C14.1 2.79999 15.8 5.09999 15.8 8.49999M5.00002 20.5C5.10002 21 5.50002 21.3 6.00002 21.3H18C18.5 21.3 18.9 21 19 20.5L21.1 10.8H2.90002L5.00002 20.5Z"
+                                stroke="currentColor"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
 
             <!-- Zoekbalk -->
-             <div class="search">
+            <div class="search">
                 <form>
                     <label>
                         <input type="search" placeholder="Zoeken">
                     </label>
                 </form>
-             </div>
+            </div>
 
+            <!-- Hamburger menu voor telefoon -->
             <div class="hamburger-menu">
                 <button class="close-menu">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20" stroke-width="1.5" aria-hidden="true"><path d="M17.7 6.29999L6.30005 17.7M17.7 17.7L6.30005 6.29999" stroke="currentColor"></path></svg>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        stroke-width="1.5" aria-hidden="true">
+                        <path d="M17.7 6.29999L6.30005 17.7M17.7 17.7L6.30005 6.29999" stroke="currentColor"></path>
+                    </svg>
                 </button>
 
                 <ul class="hamburger-list">
                     <li>
                         <a href="https://www.decathlon.nl/sporten">Sporten</a>
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            stroke-width="1.5" aria-hidden="true">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor"></path>
+                        </svg>
                     </li>
 
                     <li>
                         <a href="https://www.decathlon.nl/heren">Heren</a>
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            stroke-width="1.5" aria-hidden="true">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor"></path>
+                        </svg>
                     </li>
 
                     <li>
                         <a href="https://www.decathlon.nl/dames">Dames</a>
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            stroke-width="1.5" aria-hidden="true">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor"></path>
+                        </svg>
                     </li>
-                        
+
                     <li>
                         <a href="https://www.decathlon.nl/kinderen">Kinderen</a>
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            stroke-width="1.5" aria-hidden="true">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor"></path>
+                        </svg>
                     </li>
 
                     <li>
                         <a href="https://www.decathlon.nl/sport-accessoires">Sport Accessoires</a>
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            stroke-width="1.5" aria-hidden="true">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor"></path>
+                        </svg>
                     </li>
 
                     <li>
                         <a href="https://www.decathlon.nl/sportkleding">Sportkleding</a>
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            stroke-width="1.5" aria-hidden="true">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor"></path>
+                        </svg>
                     </li>
 
                     <li>
                         <a href="https://www.decathlon.nl/sportschoenen">Sportschoenen</a>
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            stroke-width="1.5" aria-hidden="true">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor"></path>
+                        </svg>
                     </li>
 
                     <li>
                         <a href="https://www.decathlon.nl/deals">Sale</a>
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" aria-hidden="true"><path d="M9 18L15 12L9 6" stroke="currentColor"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            stroke-width="1.5" aria-hidden="true">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor"></path>
+                        </svg>
                     </li>
-                </ul> 
+                </ul>
             </div>
         </nav>
     </header>
@@ -119,35 +176,53 @@
         <ul class="second-nav-list">
             <li>
                 <a href="https://www.decathlon.nl/sporten">Sporten</a>
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" stroke-width="1.5" aria-hidden="true" class="breadcrumbs-item-icon"><path d="M9 18L15 12L9 6" stroke="currentColor"></path></svg>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    stroke-width="1.5" aria-hidden="true" class="breadcrumbs-item-icon">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor"></path>
+                </svg>
             </li>
 
             <li>
                 <a href="https://www.decathlon.nl/sporten/wintersport">Wintersport</a>
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" stroke-width="1.5" aria-hidden="true" class="breadcrumbs-item-icon"><path d="M9 18L15 12L9 6" stroke="currentColor"></path></svg>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    stroke-width="1.5" aria-hidden="true" class="breadcrumbs-item-icon">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor"></path>
+                </svg>
             </li>
 
             <li>
                 <a href="https://www.decathlon.nl/sporten/wintersport/skien">Skiën</a>
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" stroke-width="1.5" aria-hidden="true" class="breadcrumbs-item-icon"><path d="M9 18L15 12L9 6" stroke="currentColor"></path></svg>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    stroke-width="1.5" aria-hidden="true" class="breadcrumbs-item-icon">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor"></path>
+                </svg>
             </li>
 
             <li>
                 <a href="https://www.decathlon.nl/sporten/wintersport/skikleding">Skikleding</a>
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" stroke-width="1.5" aria-hidden="true" class="breadcrumbs-item-icon"><path d="M9 18L15 12L9 6" stroke="currentColor"></path></svg>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    stroke-width="1.5" aria-hidden="true" class="breadcrumbs-item-icon">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor"></path>
+                </svg>
             </li>
 
             <li>
                 <a href="https://www.decathlon.nl/sporten/wintersport/thermo-ondergoed">Thermo ondergoed</a>
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" stroke-width="1.5" aria-hidden="true" class="breadcrumbs-item-icon"><path d="M9 18L15 12L9 6" stroke="currentColor"></path></svg>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    stroke-width="1.5" aria-hidden="true" class="breadcrumbs-item-icon">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor"></path>
+                </svg>
             </li>
 
             <li>
                 <a href="https://www.decathlon.nl/sporten/wintersport/thermo-ondergoed-dames">Thermo ondergoed dames</a>
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" stroke-width="1.5" aria-hidden="true" class="breadcrumbs-item-icon"><path d="M9 18L15 12L9 6" stroke="currentColor"></path></svg>
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    stroke-width="1.5" aria-hidden="true" class="breadcrumbs-item-icon">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor"></path>
+                </svg>
             </li>
-        </ul>  
-        
+        </ul>
+
     </nav>
 
     <main>
@@ -170,7 +245,7 @@
 
             <!-- Product merk -->
             <a href="https://www.decathlon.nl/brands/wedze" class="brand-link">
-            <span class="brand-product">WEDZE</span>
+                <span class="brand-product">WEDZE</span>
             </a>
 
             <!-- Product ID -->
@@ -180,11 +255,25 @@
             <!-- Product reviews -->
             <div class="product-reviews">
                 <svg width="86" height="15" viewBox="0 0 86 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.6574 0L8.22899 5.52786H13.3148L9.20029 8.94427L10.7719 14.4721L6.6574 11.0557L2.5429 14.4721L4.1145 8.94427L0 5.52786H5.0858L6.6574 0Z" fill="black"></path><path d="M24.6574 0L26.229 5.52786H31.3148L27.2003 8.94427L28.7719 14.4721L24.6574 11.0557L20.5429 14.4721L22.1145 8.94427L18 5.52786H23.0858L24.6574 0Z" fill="black"></path><path d="M42.6574 0L44.229 5.52786H49.3148L45.2003 8.94427L46.7719 14.4721L42.6574 11.0557L38.5429 14.4721L40.1145 8.94427L36 5.52786H41.0858L42.6574 0Z" fill="black"></path><path d="M60.6574 0L62.229 5.52786H67.3148L63.2003 8.94427L64.7719 14.4721L60.6574 11.0557L56.5429 14.4721L58.1145 8.94427L54 5.52786H59.0858L60.6574 0Z" fill="black"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M80.2287 5.52832H85.3146L81.2004 8.94434L82.7717 14.4717L78.6574 11.0557L74.5431 14.4717L74.5558 14.4248L74.5002 14.4717L76.0715 8.94434L71.9572 5.52832H77.0431L78.6144 0L78.6183 0.134766L78.6574 0L80.2287 5.52832ZM78.8 5.52832V9.87402L80.9269 11.6406L80.0607 8.59082L82.5451 6.52832H79.4738L78.7472 3.97559L78.8 5.52832Z" fill="black"></path>
+                    <path
+                        d="M6.6574 0L8.22899 5.52786H13.3148L9.20029 8.94427L10.7719 14.4721L6.6574 11.0557L2.5429 14.4721L4.1145 8.94427L0 5.52786H5.0858L6.6574 0Z"
+                        fill="black"></path>
+                    <path
+                        d="M24.6574 0L26.229 5.52786H31.3148L27.2003 8.94427L28.7719 14.4721L24.6574 11.0557L20.5429 14.4721L22.1145 8.94427L18 5.52786H23.0858L24.6574 0Z"
+                        fill="black"></path>
+                    <path
+                        d="M42.6574 0L44.229 5.52786H49.3148L45.2003 8.94427L46.7719 14.4721L42.6574 11.0557L38.5429 14.4721L40.1145 8.94427L36 5.52786H41.0858L42.6574 0Z"
+                        fill="black"></path>
+                    <path
+                        d="M60.6574 0L62.229 5.52786H67.3148L63.2003 8.94427L64.7719 14.4721L60.6574 11.0557L56.5429 14.4721L58.1145 8.94427L54 5.52786H59.0858L60.6574 0Z"
+                        fill="black"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M80.2287 5.52832H85.3146L81.2004 8.94434L82.7717 14.4717L78.6574 11.0557L74.5431 14.4717L74.5558 14.4248L74.5002 14.4717L76.0715 8.94434L71.9572 5.52832H77.0431L78.6144 0L78.6183 0.134766L78.6574 0L80.2287 5.52832ZM78.8 5.52832V9.87402L80.9269 11.6406L80.0607 8.59082L82.5451 6.52832H79.4738L78.7472 3.97559L78.8 5.52832Z"
+                        fill="black"></path>
                 </svg>
                 <p class="amount-reviews">9.040 Reviews</p>
             </div>
-            
+
             <!-- Product prijs -->
             <p class="product-price">€7,99</p>
 
@@ -192,12 +281,12 @@
             <p class="product-description">
                 Warm en comfortabel thermoshirt dankzij de geborstelde stof, platte naden en rekbaar tricot.
             </p>
-            
+
             <!-- Product kleursoort -->
             <div class="type-color-product">
                 <p>Kleur</p>
                 <p>Zwart</p>
-            </div> 
+            </div>
 
             <!-- Product maten -->
             <fieldset class="variant-product">
@@ -211,17 +300,17 @@
                         <ul class="size-list">
                             <li>
                                 <input type="radio" name="size" value="x">
-                                    <label>XS</label>
+                                <label>XS</label>
                                 <input type="radio" name="size" value="s">
-                                    <label>S</label>
+                                <label>S</label>
                                 <input type="radio" name="size" value="m">
-                                    <label>M</label>
+                                <label>M</label>
                                 <input type="radio" name="size" value="l">
-                                    <label>L</label>
+                                <label>L</label>
                                 <input type="radio" name="size" value="xl">
-                                    <label>XL</label>
+                                <label>XL</label>
                                 <input type="radio" name="size" value="2xl">
-                                    <label>2XL</label>
+                                <label>2XL</label>
                             </li>
                         </ul>
                     </form>
@@ -234,12 +323,22 @@
             <!-- Extra product informatie -->
             <ul class="additional-product-info">
                 <li>
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" aria-hidden="true"><path d="M16.19 9.12L11.19 14.12L8.38 11.31M18.59 15.66L12 20.12L5.41 15.66L5.38 5.25L12 3.75L18.56 5.25L18.59 7.71V15.66Z" stroke="currentColor"></path></svg>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        stroke-width="1.5" aria-hidden="true">
+                        <path
+                            d="M16.19 9.12L11.19 14.12L8.38 11.31M18.59 15.66L12 20.12L5.41 15.66L5.38 5.25L12 3.75L18.56 5.25L18.59 7.71V15.66Z"
+                            stroke="currentColor"></path>
+                    </svg>
                     <p>2-jaar garantie</p>
                 </li>
 
                 <li>
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" aria-hidden="true"><path d="M5.6 9.1C6.8 6.7 9.2 5 12 5C15.9 5 19 8.1 19 12C19 15.9 15.9 19 12 19C8.1 19 5 15.9 5 12M9 9.2H5V5.2" stroke="currentColor"></path></svg>
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        stroke-width="1.5" aria-hidden="true">
+                        <path
+                            d="M5.6 9.1C6.8 6.7 9.2 5 12 5C15.9 5 19 8.1 19 12C19 15.9 15.9 19 12 19C8.1 19 5 15.9 5 12M9 9.2H5V5.2"
+                            stroke="currentColor"></path>
+                    </svg>
                     <p>365 dagen retourneren</p>
                 </li>
             </ul>
@@ -250,8 +349,11 @@
 
                 <section class="deliver-method">
                     <h3>
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5">
-                            <path d="M21.5 9.99996C19 7.99996 12 2.89996 12 2.89996C12 2.89996 5 7.99996 2.5 9.99996M4.8 12C4.8 13.6 4.8 15.6 4.8 17.1V19.4C4.8 19.9 5.2 20.2 5.7 20.2H6.3H17.8H18.4C18.9 20.2 19.3 19.8 19.3 19.4V17.1V12" stroke="currentColor"></path>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            stroke-width="1.5">
+                            <path
+                                d="M21.5 9.99996C19 7.99996 12 2.89996 12 2.89996C12 2.89996 5 7.99996 2.5 9.99996M4.8 12C4.8 13.6 4.8 15.6 4.8 17.1V19.4C4.8 19.9 5.2 20.2 5.7 20.2H6.3H17.8H18.4C18.9 20.2 19.3 19.8 19.3 19.4V17.1V12"
+                                stroke="currentColor"></path>
                         </svg>
                         Thuisbezorging
                     </h3>
@@ -261,8 +363,11 @@
 
                 <section class="deliver-method">
                     <h3>
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5">
-                            <path d="M15.8001 8.5C15.8001 5.01 14.1001 2.75 12.0001 2.75C9.90005 2.75 8.20005 5.01 8.20005 8.5M13.8701 21.25H6.01005C5.54005 21.25 5.13005 20.92 5.03005 20.46L2.93005 10.75H21.0501L20.3401 14.06M19.7501 16.23L17.1501 17.34L16.0401 19.94L15.1101 17.16L14.1901 14.38L16.9701 15.3L19.7501 16.23Z" stroke="currentColor"></path>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            stroke-width="1.5">
+                            <path
+                                d="M15.8001 8.5C15.8001 5.01 14.1001 2.75 12.0001 2.75C9.90005 2.75 8.20005 5.01 8.20005 8.5M13.8701 21.25H6.01005C5.54005 21.25 5.13005 20.92 5.03005 20.46L2.93005 10.75H21.0501L20.3401 14.06M19.7501 16.23L17.1501 17.34L16.0401 19.94L15.1101 17.16L14.1901 14.38L16.9701 15.3L19.7501 16.23Z"
+                                stroke="currentColor"></path>
                         </svg>
                         Afhalen bij Decathlon
                     </h3>
@@ -271,8 +376,11 @@
 
                 <section class="deliver-method">
                     <h3>
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5">
-                            <path d="M9.20005 9.69999C9.20005 11.3 10.5 12.5 12 12.5C13.5 12.5 14.8 11.2 14.8 9.69999C14.8 8.19999 13.6 6.79999 12 6.79999C10.4 6.79999 9.20005 8.09999 9.20005 9.69999ZM17.5 14.1L12 20.8L6.50005 14C4.40005 11.5 4.40005 7.79999 6.50005 5.29999C9.40005 1.79999 14.7 1.79999 17.6 5.29999C19.6 7.89999 19.6 11.5 17.5 14.1Z" stroke="currentColor"></path>
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            stroke-width="1.5">
+                            <path
+                                d="M9.20005 9.69999C9.20005 11.3 10.5 12.5 12 12.5C13.5 12.5 14.8 11.2 14.8 9.69999C14.8 8.19999 13.6 6.79999 12 6.79999C10.4 6.79999 9.20005 8.09999 9.20005 9.69999ZM17.5 14.1L12 20.8L6.50005 14C4.40005 11.5 4.40005 7.79999 6.50005 5.29999C9.40005 1.79999 14.7 1.79999 17.6 5.29999C19.6 7.89999 19.6 11.5 17.5 14.1Z"
+                                stroke="currentColor"></path>
                         </svg>
                         Afhalen bij PostNL-punt
                     </h3>
@@ -288,39 +396,47 @@
         <ul class="return-options">
             <li>
                 <a href="https://help.decathlon.nl/hc/nl/articles/13787818835868-Wat-is-het-retourtermijn">
-                Gratis retourneren binnen 365 dagen*
+                    Gratis retourneren binnen 365 dagen*
                 </a>
             </li>
 
             <li>
                 <a href="https://www.decathlon.nl/verzending-bezorging_lp-WEUJB2">
-                Afhalen in de winkel
-                <p>Standaard of binnen 1 uur</p>
+                    Afhalen in de winkel
+                    <p>Standaard of binnen 1 uur</p>
                 </a>
             </li>
 
             <li>
                 <a href="https://help.decathlon.nl/hc/nl/articles/4404931852946-Wat-is-het-garantiebeleid">
-                Minimaal 2 jaar garantie*
+                    Minimaal 2 jaar garantie*
                 </a>
             </li>
 
             <li>
                 <a href="https://www.decathlon.nl/buyback_lp-0V45GY">
-                Buyback
-                <p>Ruil je gebruikte producten in voor een giftcard</p>
+                    Buyback
+                    <p>Ruil je gebruikte producten in voor een giftcard</p>
                 </a>
             </li>
         </ul>
 
         <!-- Download app -->
-         <a href="https://www.decathlon.nl/c/lp/de-decathlon-app-ontdek-alle-voordelen-decathlon-nl_7dfa6abf-1419-43fd-b0c6-117a00403e68">Download de app<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24">
-            <path stroke="" stroke-linecap="square" d="m14.385 18.467 6.464-6.465-6.467-6.466m5.717 6.466H3.1"></path></svg>
+        <a
+            href="https://www.decathlon.nl/c/lp/de-decathlon-app-ontdek-alle-voordelen-decathlon-nl_7dfa6abf-1419-43fd-b0c6-117a00403e68">Download
+            de app<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke="" stroke-linecap="square" d="m14.385 18.467 6.464-6.465-6.467-6.466m5.717 6.466H3.1">
+                </path>
+            </svg>
         </a>
 
         <!-- Lidmaatschap -->
-        <a href="https://www.decathlon.nl/c/lp/de-decathlon-app-ontdek-alle-voordelen-decathlon-nl_7dfa6abf-1419-43fd-b0c6-117a00403e68">Word lid<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24">
-            <path stroke="" stroke-linecap="square" d="m14.385 18.467 6.464-6.465-6.467-6.466m5.717 6.466H3.1"></path></svg>
+        <a
+            href="https://www.decathlon.nl/c/lp/de-decathlon-app-ontdek-alle-voordelen-decathlon-nl_7dfa6abf-1419-43fd-b0c6-117a00403e68">Word
+            lid<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke="" stroke-linecap="square" d="m14.385 18.467 6.464-6.465-6.467-6.466m5.717 6.466H3.1">
+                </path>
+            </svg>
         </a>
 
         <!-- Sociale media -->
@@ -328,28 +444,39 @@
             <li>
                 <a href="https://www.facebook.com/Decathlon.Nederland">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24">
-                        <path d="M22 12.0607C22 6.504 17.5233 2 12 2C6.47667 2 2 6.504 2 12.0607C2 17.0833 5.656 21.2453 10.4373 22V14.9693H7.89867V12.06H10.4373V9.844C10.4373 7.32267 11.93 5.92933 14.2147 5.92933C15.308 5.92933 16.4533 6.126 16.4533 6.126V8.602H15.1913C13.9493 8.602 13.5627 9.378 13.5627 10.174V12.0607H16.336L15.8927 14.9687H13.5627V22C18.344 21.2453 22 17.0833 22 12.0607Z" fill=""></path>
+                        <path
+                            d="M22 12.0607C22 6.504 17.5233 2 12 2C6.47667 2 2 6.504 2 12.0607C2 17.0833 5.656 21.2453 10.4373 22V14.9693H7.89867V12.06H10.4373V9.844C10.4373 7.32267 11.93 5.92933 14.2147 5.92933C15.308 5.92933 16.4533 6.126 16.4533 6.126V8.602H15.1913C13.9493 8.602 13.5627 9.378 13.5627 10.174V12.0607H16.336L15.8927 14.9687H13.5627V22C18.344 21.2453 22 17.0833 22 12.0607Z"
+                            fill=""></path>
                     </svg>
                 </a>
             </li>
             <li>
                 <a href="https://www.youtube.com/c/DecathlonNetherlands">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.792 5.41471C20.6521 5.64577 21.3325 6.32614 21.5635 7.18621C21.9872 8.75232 22 12.0001 22 12.0001C22 12.0001 22 15.2607 21.5764 16.8139C21.3453 17.674 20.665 18.3544 19.8049 18.5854C18.2516 19.0091 12 19.0091 12 19.0091C12 19.0091 5.74839 19.0091 4.19512 18.5854C3.33504 18.3544 2.65469 17.674 2.42362 16.8139C2 15.2478 2 12.0001 2 12.0001C2 12.0001 2 8.75232 2.41078 7.19905C2.64185 6.33897 3.32221 5.65861 4.18229 5.42755C5.73556 5.00392 11.9872 4.99109 11.9872 4.99109C11.9872 4.99109 18.2388 4.99109 19.792 5.41471ZM15.1836 12.0001L9.99743 15.0039V8.99623L15.1836 12.0001Z" fill=""></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.792 5.41471C20.6521 5.64577 21.3325 6.32614 21.5635 7.18621C21.9872 8.75232 22 12.0001 22 12.0001C22 12.0001 22 15.2607 21.5764 16.8139C21.3453 17.674 20.665 18.3544 19.8049 18.5854C18.2516 19.0091 12 19.0091 12 19.0091C12 19.0091 5.74839 19.0091 4.19512 18.5854C3.33504 18.3544 2.65469 17.674 2.42362 16.8139C2 15.2478 2 12.0001 2 12.0001C2 12.0001 2 8.75232 2.41078 7.19905C2.64185 6.33897 3.32221 5.65861 4.18229 5.42755C5.73556 5.00392 11.9872 4.99109 11.9872 4.99109C11.9872 4.99109 18.2388 4.99109 19.792 5.41471ZM15.1836 12.0001L9.99743 15.0039V8.99623L15.1836 12.0001Z"
+                            fill=""></path>
                     </svg>
                 </a>
             </li>
             <li>
                 <a href="https://www.instagram.com/decathlon_nederland">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C9.5556 3 9.2496 3.0102 8.2896 3.054C7.3314 3.0978 6.6768 3.2502 6.1044 3.4728C5.5044 3.6984 4.9602 4.0524 4.5102 4.5108C4.05253 4.96028 3.69831 5.5041 3.4722 6.1044C3.2508 6.6768 3.0978 7.332 3.054 8.2902C3.0108 9.2496 3 9.555 3 12C3 14.445 3.0102 14.7504 3.054 15.7104C3.0978 16.6686 3.2502 17.3232 3.4728 17.8956C3.6984 18.4956 4.0524 19.0398 4.5108 19.4898C4.96029 19.9475 5.50411 20.3017 6.1044 20.5278C6.6768 20.7498 7.3314 20.9022 8.2896 20.946C9.2496 20.9898 9.5556 21 12 21C14.4444 21 14.7504 20.9898 15.7104 20.946C16.6686 20.9022 17.3232 20.7498 17.8956 20.5272C18.4956 20.3016 19.0398 19.9476 19.4898 19.4892C19.9475 19.0397 20.3017 18.4959 20.5278 17.8956C20.7498 17.3232 20.9022 16.6686 20.946 15.7104C20.9898 14.7504 21 14.4444 21 12C21 9.5556 20.9898 9.2496 20.946 8.2896C20.9022 7.3314 20.7498 6.6768 20.5272 6.1044C20.3012 5.50384 19.947 4.95979 19.4892 4.5102C19.0397 4.05253 18.4959 3.69831 17.8956 3.4722C17.3232 3.2508 16.668 3.0978 15.7098 3.054C14.7504 3.0108 14.445 3 12 3ZM12 4.6218C14.403 4.6218 14.688 4.6308 15.6372 4.674C16.5144 4.7142 16.9908 4.86 17.3082 4.9842C17.7282 5.1468 18.0282 5.3424 18.3432 5.6568C18.6582 5.9718 18.8532 6.2718 19.0158 6.6918C19.1394 7.0092 19.2858 7.4856 19.326 8.3628C19.3692 9.312 19.3782 9.597 19.3782 12C19.3782 14.403 19.3692 14.688 19.326 15.6372C19.2858 16.5144 19.14 16.9908 19.0158 17.3082C18.8718 17.6991 18.6419 18.0528 18.3432 18.3432C18.0528 18.642 17.6992 18.8718 17.3082 19.0158C16.9908 19.1394 16.5144 19.2858 15.6372 19.326C14.688 19.3692 14.4036 19.3782 12 19.3782C9.5964 19.3782 9.312 19.3692 8.3628 19.326C7.4856 19.2858 7.0092 19.14 6.6918 19.0158C6.30087 18.8718 5.9472 18.6419 5.6568 18.3432C5.35811 18.0528 5.12828 17.6991 4.9842 17.3082C4.8606 16.9908 4.7142 16.5144 4.674 15.6372C4.6308 14.688 4.6218 14.403 4.6218 12C4.6218 9.597 4.6308 9.312 4.674 8.3628C4.7142 7.4856 4.86 7.0092 4.9842 6.6918C5.1468 6.2718 5.3424 5.9718 5.6568 5.6568C5.94716 5.35803 6.30085 5.12819 6.6918 4.9842C7.0092 4.8606 7.4856 4.7142 8.3628 4.674C9.312 4.6308 9.597 4.6218 12 4.6218Z" fill=""></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12 15.003C11.6056 15.003 11.2151 14.9254 10.8508 14.7744C10.4865 14.6235 10.1554 14.4023 9.87656 14.1235C9.5977 13.8446 9.3765 13.5136 9.22559 13.1492C9.07467 12.7849 8.997 12.3944 8.997 12C8.997 11.6057 9.07467 11.2152 9.22559 10.8508C9.3765 10.4865 9.5977 10.1554 9.87656 9.87659C10.1554 9.59774 10.4865 9.37654 10.8508 9.22562C11.2151 9.07471 11.6056 8.99703 12 8.99703C12.7964 8.99703 13.5603 9.31342 14.1234 9.87659C14.6866 10.4398 15.003 11.2036 15.003 12C15.003 12.7965 14.6866 13.5603 14.1234 14.1235C13.5603 14.6866 12.7964 15.003 12 15.003ZM12 7.37403C10.7731 7.37403 9.59647 7.86141 8.72892 8.72896C7.86138 9.5965 7.374 10.7731 7.374 12C7.374 13.2269 7.86138 14.4036 8.72892 15.2711C9.59647 16.1387 10.7731 16.626 12 16.626C13.2269 16.626 14.4035 16.1387 15.2711 15.2711C16.1386 14.4036 16.626 13.2269 16.626 12C16.626 10.7731 16.1386 9.5965 15.2711 8.72896C14.4035 7.86141 13.2269 7.37403 12 7.37403ZM17.9718 7.29003C17.9718 7.58005 17.8566 7.85818 17.6515 8.06325C17.4464 8.26833 17.1683 8.38353 16.8783 8.38353C16.5883 8.38353 16.3101 8.26833 16.1051 8.06325C15.9 7.85818 15.7848 7.58005 15.7848 7.29003C15.7848 7.00002 15.9 6.72188 16.1051 6.51681C16.3101 6.31174 16.5883 6.19653 16.8783 6.19653C17.1683 6.19653 17.4464 6.31174 17.6515 6.51681C17.8566 6.72188 17.9718 7.00002 17.9718 7.29003Z" fill=""></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 3C9.5556 3 9.2496 3.0102 8.2896 3.054C7.3314 3.0978 6.6768 3.2502 6.1044 3.4728C5.5044 3.6984 4.9602 4.0524 4.5102 4.5108C4.05253 4.96028 3.69831 5.5041 3.4722 6.1044C3.2508 6.6768 3.0978 7.332 3.054 8.2902C3.0108 9.2496 3 9.555 3 12C3 14.445 3.0102 14.7504 3.054 15.7104C3.0978 16.6686 3.2502 17.3232 3.4728 17.8956C3.6984 18.4956 4.0524 19.0398 4.5108 19.4898C4.96029 19.9475 5.50411 20.3017 6.1044 20.5278C6.6768 20.7498 7.3314 20.9022 8.2896 20.946C9.2496 20.9898 9.5556 21 12 21C14.4444 21 14.7504 20.9898 15.7104 20.946C16.6686 20.9022 17.3232 20.7498 17.8956 20.5272C18.4956 20.3016 19.0398 19.9476 19.4898 19.4892C19.9475 19.0397 20.3017 18.4959 20.5278 17.8956C20.7498 17.3232 20.9022 16.6686 20.946 15.7104C20.9898 14.7504 21 14.4444 21 12C21 9.5556 20.9898 9.2496 20.946 8.2896C20.9022 7.3314 20.7498 6.6768 20.5272 6.1044C20.3012 5.50384 19.947 4.95979 19.4892 4.5102C19.0397 4.05253 18.4959 3.69831 17.8956 3.4722C17.3232 3.2508 16.668 3.0978 15.7098 3.054C14.7504 3.0108 14.445 3 12 3ZM12 4.6218C14.403 4.6218 14.688 4.6308 15.6372 4.674C16.5144 4.7142 16.9908 4.86 17.3082 4.9842C17.7282 5.1468 18.0282 5.3424 18.3432 5.6568C18.6582 5.9718 18.8532 6.2718 19.0158 6.6918C19.1394 7.0092 19.2858 7.4856 19.326 8.3628C19.3692 9.312 19.3782 9.597 19.3782 12C19.3782 14.403 19.3692 14.688 19.326 15.6372C19.2858 16.5144 19.14 16.9908 19.0158 17.3082C18.8718 17.6991 18.6419 18.0528 18.3432 18.3432C18.0528 18.642 17.6992 18.8718 17.3082 19.0158C16.9908 19.1394 16.5144 19.2858 15.6372 19.326C14.688 19.3692 14.4036 19.3782 12 19.3782C9.5964 19.3782 9.312 19.3692 8.3628 19.326C7.4856 19.2858 7.0092 19.14 6.6918 19.0158C6.30087 18.8718 5.9472 18.6419 5.6568 18.3432C5.35811 18.0528 5.12828 17.6991 4.9842 17.3082C4.8606 16.9908 4.7142 16.5144 4.674 15.6372C4.6308 14.688 4.6218 14.403 4.6218 12C4.6218 9.597 4.6308 9.312 4.674 8.3628C4.7142 7.4856 4.86 7.0092 4.9842 6.6918C5.1468 6.2718 5.3424 5.9718 5.6568 5.6568C5.94716 5.35803 6.30085 5.12819 6.6918 4.9842C7.0092 4.8606 7.4856 4.7142 8.3628 4.674C9.312 4.6308 9.597 4.6218 12 4.6218Z"
+                            fill=""></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 15.003C11.6056 15.003 11.2151 14.9254 10.8508 14.7744C10.4865 14.6235 10.1554 14.4023 9.87656 14.1235C9.5977 13.8446 9.3765 13.5136 9.22559 13.1492C9.07467 12.7849 8.997 12.3944 8.997 12C8.997 11.6057 9.07467 11.2152 9.22559 10.8508C9.3765 10.4865 9.5977 10.1554 9.87656 9.87659C10.1554 9.59774 10.4865 9.37654 10.8508 9.22562C11.2151 9.07471 11.6056 8.99703 12 8.99703C12.7964 8.99703 13.5603 9.31342 14.1234 9.87659C14.6866 10.4398 15.003 11.2036 15.003 12C15.003 12.7965 14.6866 13.5603 14.1234 14.1235C13.5603 14.6866 12.7964 15.003 12 15.003ZM12 7.37403C10.7731 7.37403 9.59647 7.86141 8.72892 8.72896C7.86138 9.5965 7.374 10.7731 7.374 12C7.374 13.2269 7.86138 14.4036 8.72892 15.2711C9.59647 16.1387 10.7731 16.626 12 16.626C13.2269 16.626 14.4035 16.1387 15.2711 15.2711C16.1386 14.4036 16.626 13.2269 16.626 12C16.626 10.7731 16.1386 9.5965 15.2711 8.72896C14.4035 7.86141 13.2269 7.37403 12 7.37403ZM17.9718 7.29003C17.9718 7.58005 17.8566 7.85818 17.6515 8.06325C17.4464 8.26833 17.1683 8.38353 16.8783 8.38353C16.5883 8.38353 16.3101 8.26833 16.1051 8.06325C15.9 7.85818 15.7848 7.58005 15.7848 7.29003C15.7848 7.00002 15.9 6.72188 16.1051 6.51681C16.3101 6.31174 16.5883 6.19653 16.8783 6.19653C17.1683 6.19653 17.4464 6.31174 17.6515 6.51681C17.8566 6.72188 17.9718 7.00002 17.9718 7.29003Z"
+                            fill=""></path>
                     </svg>
                 </a>
             </li>
             <li>
                 <a href="https://www.linkedin.com/company/decathlon-group/">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24">
-                        <path d="M2 4.66881C2 4.02529 2.22523 3.49441 2.67568 3.07614C3.12612 2.65786 3.71172 2.44873 4.43243 2.44873C5.14029 2.44873 5.71299 2.65464 6.15058 3.06649C6.60102 3.4912 6.82626 4.0446 6.82626 4.72672C6.82626 5.34448 6.60747 5.85927 6.16988 6.27112C5.71944 6.69584 5.12741 6.90819 4.39382 6.90819H4.37452C3.66666 6.90819 3.09396 6.69584 2.65637 6.27112C2.21878 5.84641 2 5.3123 2 4.66881ZM2.25097 21.5607V8.66495H6.53668V21.5607H2.25097ZM8.9112 21.5607H13.1969V14.3599C13.1969 13.9095 13.2484 13.562 13.3514 13.3175C13.5315 12.8799 13.805 12.5099 14.1718 12.2074C14.5386 11.905 14.9987 11.7538 15.5521 11.7538C16.9936 11.7538 17.7143 12.7254 17.7143 14.6688V21.5607H22V14.1669C22 12.2621 21.5496 10.8175 20.6486 9.8329C19.7477 8.84834 18.5573 8.35607 17.0772 8.35607C15.417 8.35607 14.1236 9.07035 13.1969 10.4989V10.5375H13.1776L13.1969 10.4989V8.66495H8.9112C8.93693 9.07678 8.94981 10.3573 8.94981 12.5066C8.94981 14.6559 8.93693 17.6739 8.9112 21.5607Z" fill=""></path>
+                        <path
+                            d="M2 4.66881C2 4.02529 2.22523 3.49441 2.67568 3.07614C3.12612 2.65786 3.71172 2.44873 4.43243 2.44873C5.14029 2.44873 5.71299 2.65464 6.15058 3.06649C6.60102 3.4912 6.82626 4.0446 6.82626 4.72672C6.82626 5.34448 6.60747 5.85927 6.16988 6.27112C5.71944 6.69584 5.12741 6.90819 4.39382 6.90819H4.37452C3.66666 6.90819 3.09396 6.69584 2.65637 6.27112C2.21878 5.84641 2 5.3123 2 4.66881ZM2.25097 21.5607V8.66495H6.53668V21.5607H2.25097ZM8.9112 21.5607H13.1969V14.3599C13.1969 13.9095 13.2484 13.562 13.3514 13.3175C13.5315 12.8799 13.805 12.5099 14.1718 12.2074C14.5386 11.905 14.9987 11.7538 15.5521 11.7538C16.9936 11.7538 17.7143 12.7254 17.7143 14.6688V21.5607H22V14.1669C22 12.2621 21.5496 10.8175 20.6486 9.8329C19.7477 8.84834 18.5573 8.35607 17.0772 8.35607C15.417 8.35607 14.1236 9.07035 13.1969 10.4989V10.5375H13.1776L13.1969 10.4989V8.66495H8.9112C8.93693 9.07678 8.94981 10.3573 8.94981 12.5066C8.94981 14.6559 8.93693 17.6739 8.9112 21.5607Z"
+                            fill=""></path>
                     </svg>
                 </a>
             </li>
@@ -358,9 +485,15 @@
         <!-- Logo die naar de homepagina navigeert -->
         <a href="https://www.decathlon.nl/">
             <svg width="188" height="28" viewBox="0 0 188 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path d="M57.9108 23.8H71.1548V19.544H62.9508V15.974H70.2169V12.012H62.9508V8.442H71.1548V4.2H57.9108V23.8ZM87.5909 15.358C85.6728 18.41 83.8108 19.684 81.4168 19.684C78.3088 19.684 76.5028 17.5 76.5028 13.706C76.5028 10.108 78.1688 8.316 80.7309 8.316C82.4248 8.316 83.8248 9.072 84.2589 11.592H89.2989C88.7528 6.79 85.6869 3.808 80.7868 3.808C75.1028 3.808 71.3648 7.82599 71.3648 13.986C71.3648 20.188 75.1028 24.192 81.2488 24.192C85.2669 24.192 87.9968 22.512 89.8028 20.244H96.6768V23.8H101.689V4.2H94.5769L87.5909 15.358ZM96.6768 16.31H92.2388L96.6768 9.1V16.31ZM47.1588 4.2H39.7948V23.8H47.1588C52.9969 23.8 56.7628 19.95 56.7628 14C56.7628 8.05 52.9969 4.2 47.1588 4.2ZM47.0888 19.544H44.8348V8.442H47.0888C50.0008 8.442 51.6388 10.5 51.6388 14C51.6388 17.486 50.0008 19.544 47.0888 19.544ZM159.537 3.808C153.615 3.808 149.639 7.826 149.639 14C149.639 20.174 153.615 24.192 159.537 24.192C165.473 24.192 169.435 20.174 169.435 14C169.435 7.82601 165.473 3.808 159.537 3.808ZM159.537 19.684C156.625 19.684 154.791 17.738 154.791 14C154.791 10.262 156.625 8.316 159.537 8.316C162.463 8.316 164.283 10.262 164.283 14C164.283 17.738 162.463 19.684 159.537 19.684ZM102.949 8.442H107.891V23.8H112.931V8.442H117.873V4.2H102.949L102.949 8.442ZM182.301 4.2V14.994L175.805 4.2H170.583V23.8H175.455V12.558L182.217 23.8H187.173V4.2L182.301 4.2ZM142.499 4.2H137.459V23.8H150.101V19.558H142.499V4.2ZM130.963 11.676H124.173V4.2H119.133V23.8H124.173V15.904H130.963V23.8H136.003V4.2H130.963V11.676Z" fill=""></path><path d="M25.5711 0C14.6267 0 1.01309 11.3236 1.01309 20.7085C1.01309 25.5554 4.73612 28 9.65333 28C13.264 28 17.6333 26.6794 21.848 24.1365V5.40893C20.7241 7.33366 15.4416 15.0888 11.1987 19.2193C9.03518 21.3266 7.32118 22.2398 5.84602 22.2398C4.18821 22.2398 3.40146 21.1159 3.40146 19.4441C3.40146 11.8575 16.1722 1.99498 24.6298 1.99498C28.114 1.99498 30.3618 3.54039 30.3618 6.54692C30.3618 9.30055 28.4933 12.7566 25.3041 15.9458V21.7481C30.8676 17.3507 34.1972 11.7451 34.1972 7.22127C34.1972 2.4586 30.4883 0 25.5711 0Z" fill=""></path>
+                <path
+                    d="M57.9108 23.8H71.1548V19.544H62.9508V15.974H70.2169V12.012H62.9508V8.442H71.1548V4.2H57.9108V23.8ZM87.5909 15.358C85.6728 18.41 83.8108 19.684 81.4168 19.684C78.3088 19.684 76.5028 17.5 76.5028 13.706C76.5028 10.108 78.1688 8.316 80.7309 8.316C82.4248 8.316 83.8248 9.072 84.2589 11.592H89.2989C88.7528 6.79 85.6869 3.808 80.7868 3.808C75.1028 3.808 71.3648 7.82599 71.3648 13.986C71.3648 20.188 75.1028 24.192 81.2488 24.192C85.2669 24.192 87.9968 22.512 89.8028 20.244H96.6768V23.8H101.689V4.2H94.5769L87.5909 15.358ZM96.6768 16.31H92.2388L96.6768 9.1V16.31ZM47.1588 4.2H39.7948V23.8H47.1588C52.9969 23.8 56.7628 19.95 56.7628 14C56.7628 8.05 52.9969 4.2 47.1588 4.2ZM47.0888 19.544H44.8348V8.442H47.0888C50.0008 8.442 51.6388 10.5 51.6388 14C51.6388 17.486 50.0008 19.544 47.0888 19.544ZM159.537 3.808C153.615 3.808 149.639 7.826 149.639 14C149.639 20.174 153.615 24.192 159.537 24.192C165.473 24.192 169.435 20.174 169.435 14C169.435 7.82601 165.473 3.808 159.537 3.808ZM159.537 19.684C156.625 19.684 154.791 17.738 154.791 14C154.791 10.262 156.625 8.316 159.537 8.316C162.463 8.316 164.283 10.262 164.283 14C164.283 17.738 162.463 19.684 159.537 19.684ZM102.949 8.442H107.891V23.8H112.931V8.442H117.873V4.2H102.949L102.949 8.442ZM182.301 4.2V14.994L175.805 4.2H170.583V23.8H175.455V12.558L182.217 23.8H187.173V4.2L182.301 4.2ZM142.499 4.2H137.459V23.8H150.101V19.558H142.499V4.2ZM130.963 11.676H124.173V4.2H119.133V23.8H124.173V15.904H130.963V23.8H136.003V4.2H130.963V11.676Z"
+                    fill=""></path>
+                <path
+                    d="M25.5711 0C14.6267 0 1.01309 11.3236 1.01309 20.7085C1.01309 25.5554 4.73612 28 9.65333 28C13.264 28 17.6333 26.6794 21.848 24.1365V5.40893C20.7241 7.33366 15.4416 15.0888 11.1987 19.2193C9.03518 21.3266 7.32118 22.2398 5.84602 22.2398C4.18821 22.2398 3.40146 21.1159 3.40146 19.4441C3.40146 11.8575 16.1722 1.99498 24.6298 1.99498C28.114 1.99498 30.3618 3.54039 30.3618 6.54692C30.3618 9.30055 28.4933 12.7566 25.3041 15.9458V21.7481C30.8676 17.3507 34.1972 11.7451 34.1972 7.22127C34.1972 2.4586 30.4883 0 25.5711 0Z"
+                    fill=""></path>
             </svg>
         </a>
     </footer>
 </body>
+
 </html>
