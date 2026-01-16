@@ -101,6 +101,34 @@ aside {
     background-color: transparent;
 }
 
+@keyframes --disney-keyframe {
+    0% {
+        scale: 1;
+	}
+	
+	25% {
+		scale: 0.75;
+	}
+	
+	50%{
+		scale: 1.5;
+	}
+	
+	75% {
+		scale: 0.7;
+	}
+	
+	100% {
+		scale: 1;
+	}
+}
+
+    .disney-animation {
+    animation-name: --disney-keyframe;
+    animation-duration: .6s;
+    animation-iteration-count: ease-in-out;
+}
+
 
 
 .login-button,
