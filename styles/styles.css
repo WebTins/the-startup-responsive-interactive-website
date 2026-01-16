@@ -155,6 +155,12 @@ aside {
 }
 
 main {
+	
+	@media (width > 40em) {
+		display:grid;
+		grid-template-columns:1fr 1fr;
+		gap:1em;
+	}
 
     .brand-link {
         text-decoration: none; 
