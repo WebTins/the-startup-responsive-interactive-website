@@ -162,6 +162,15 @@ main {
 		gap:1em;
 	}
 
+    .photo-gallery {
+        display:flex;
+		overflow:auto;
+		scroll-snap-type:x mandatory;
+		
+		overscroll-behavior-x:contain;
+    }
+    
+
     .brand-link {
         text-decoration: none; 
         font-size: var(--font-size-l);
