@@ -325,4 +325,31 @@ main {
             }
         }
     }
+
+    .shopping-cart-button {
+        display: flex;
+        justify-content: center;
+        padding-top: 2.5rem;
+
+        .add-shopping-cart {
+            border: none;
+            width: 95%;
+            height: 4rem;
+            background-color: var(--brand-color);
+            color: var(--content-light);
+            font-size: var(--font-size-s);
+            cursor: pointer;
+            transition: .2s ease;
+        }
+
+        .add-shopping-cart:hover {
+            background-color: var(--button-hover);
+            transition: .2s ease;
+        }
+
+        .add-shopping-cart:active {
+            background-color: var(--button-active);
+            transform: scale(0.95);
+        }
+    }
 }
