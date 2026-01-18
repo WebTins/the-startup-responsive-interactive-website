@@ -25,6 +25,10 @@
     --background-alternative: hsl(353, 80%, 98%);
     --background-quiet: hsl(300, 5%, 96%);
 
+    /* Kleuren hover/active states */
+    --button-hover: hsl(234, 55%, 43%);
+    --button-active: hsl(234, 55%, 33%);
+
     /* Typografie */
     --heading-size-l: 2rem;
     --heading-size-m: 1.6rem;
@@ -104,26 +108,26 @@ aside {
 @keyframes --disney-keyframe {
     0% {
         scale: 1;
-	}
-	
-	25% {
-		scale: 0.75;
-	}
-	
-	50%{
-		scale: 1.5;
-	}
-	
-	75% {
-		scale: 0.7;
-	}
-	
-	100% {
-		scale: 1;
-	}
+    }
+
+    25% {
+        scale: 0.75;
+    }
+
+    50% {
+        scale: 1.5;
+    }
+
+    75% {
+        scale: 0.7;
+    }
+
+    100% {
+        scale: 1;
+    }
 }
 
-    .disney-animation {
+.disney-animation {
     animation-name: --disney-keyframe;
     animation-duration: .6s;
     animation-iteration-count: ease-in-out;
@@ -143,7 +147,7 @@ aside {
     align-items: center;
 }
 
-.search {   
+.search {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,7 +161,7 @@ aside {
         width: 85vw;
 
         background-image: url("/assets/search-icon.svg");
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         background-position: 0.2em center;
 
         a {
@@ -165,14 +169,14 @@ aside {
             justify-content: center;
             align-items: center;
         }
-    }   
-
+    }
 }
 
-.second-nav-list{
+.second-nav-list {
     padding: 0;
     margin: 0.5rem;
 }
+
 .second-nav-option {
     display: none;
 }
@@ -180,6 +184,7 @@ aside {
 .second-nav-option-shown {
     padding-left: 0.7rem;
     padding-top: 1rem;
+
     a {
         text-decoration: none;
 
@@ -198,28 +203,28 @@ aside {
 }
 
 main {
-	
-	@media (width > 40em) {
-		display:grid;
-		grid-template-columns:1fr 1fr;
-		gap:1em;
-	}
+
+    @media (width > 40em) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
 
     .photo-gallery {
-        display:flex;
-		overflow:auto;
-		scroll-snap-type:x mandatory;
-		padding: 1rem;
-		overscroll-behavior-x:contain;
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        padding: 1rem;
+        overscroll-behavior-x: contain;
     }
 
     .product-info {
         padding: 1rem;
     }
-    
+
 
     .brand-link {
-        text-decoration: none; 
+        text-decoration: none;
         font-size: var(--font-size-l);
         font-weight: var(--font-weight-bold);
         color: var(--brand-color);
@@ -315,6 +320,7 @@ main {
 
                 .size-button:hover {
                     border-style: dotted;
+                    border-color: var(--brand-color);
                 }
             }
         }
