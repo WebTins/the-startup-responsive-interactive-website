@@ -352,4 +352,17 @@ main {
             transform: scale(0.95);
         }
     }
+
+    .additional-product-info {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0 2rem 1rem;
+        gap: 1rem;
+
+        li {
+            display: flex;
+            gap: 0.25rem;
+            align-items: center;
+        }
+    }
 }
