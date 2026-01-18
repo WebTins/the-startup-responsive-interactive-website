@@ -277,10 +277,12 @@ main {
     }
 
     .variant-product {
+        display: flex;
+        flex-direction: column;
         width: fit-content;
         border: none;
-        padding: 0;
-
+        padding: 1rem;
+        
         .sizing-info {
             display: flex;
             justify-content: space-between;
