@@ -367,4 +367,42 @@ main {
             align-items: center;
         }
     }
+
+    .deliver-options {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        h2 {
+            font-size: var(--font-size-l);
+            padding-bottom: 1rem;
+        }
+
+        .deliver-method {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h3 {
+                font-size: var(--font-size-s);
+            }
+
+            button {
+                padding-left: 2rem;
+                padding-bottom: 1rem;
+                cursor: pointer;
+                display: flex;
+                font-weight: var(--font-weight-semi-bold);
+                color: var(--brand-color);
+                border: none;
+                background-color: var(--content-light);
+            }
+
+            p {
+                padding-left: 2rem;
+                padding-bottom: 1rem;
+                color: var(--content-light-dark);
+                font-size: var(--font-size-xs);
+            }
+        }
 }
