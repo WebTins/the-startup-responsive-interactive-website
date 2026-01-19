@@ -22,11 +22,21 @@ Code conventies zijn erg belangrijk voor leesbaarheid en een goede structeer van
 Bij code conventies is het belangrijk dat er rekening gehouden wordt met ademruimte om je code leesbaar te maken en dat doe je doormiddel van inspringen. 
 Daarom heb ik ervoor gekozen om bij het inspringen altijd tabs te gaan gebruiken en na elke selector 1 witregel.
 
-Hier is een voorbeeld van mijn HTML en CSS code waar ik ademruimte heb toegepast
+Hier is een voorbeeld van mijn HTML en CSS code waar ik ademruimte heb toegepast.
 
 https://github.com/WebTins/the-startup-responsive-interactive-website/blob/0b72b67bac8a15b1821cd5f5b0259c83fff15c57/index.html#L114-L129
 
 https://github.com/WebTins/the-startup-responsive-interactive-website/blob/0b72b67bac8a15b1821cd5f5b0259c83fff15c57/styles/styles.css#L148-L153
+
+### Volgorde en nesten van CSS selectors
+Tijdens het stijlen is het belangrijk dat alle CSS selectors goed genest zijn en ook in de juiste volgorde zitten.
+Dit zorgt voor leesbaarheid en maakt het navigeren makkelijker tijdens het zoeken naar selectors om te stijlen.
+
+Hier is een voorbeeld hoe ik mijn code op volgorde heb gezet en de CSS selectors heb genest.
+
+https://github.com/WebTins/the-startup-responsive-interactive-website/blob/0b72b67bac8a15b1821cd5f5b0259c83fff15c57/styles/styles.css#L55-L80
+
+
 
 ### Volgorde
 
