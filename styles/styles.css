@@ -409,6 +409,7 @@ main {
             }
 
             button {
+                width: 9.5625rem;
                 padding-left: 2rem;
                 padding-bottom: 1rem;
                 cursor: pointer;
