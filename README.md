@@ -43,10 +43,12 @@ Hier is een kleine voorbeeld hoe ik mijn media queries heb genest.
 
 https://github.com/WebTins/the-startup-responsive-interactive-website/blob/0b72b67bac8a15b1821cd5f5b0259c83fff15c57/styles/styles.css#L213-L220
 
+### Naamgeving
+
+Bij naamgeving van de classes is het bij mij belangrijk dat er gebruik wordt gemaakt van kebab-cases en alle classes moeten in kleine letters geschreven worden in het Engels.
 
 
 
-### Volgorde
 
 ## Licentie
 
