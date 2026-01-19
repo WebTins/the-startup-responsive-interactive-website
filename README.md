@@ -36,6 +36,14 @@ Hier is een voorbeeld hoe ik mijn code op volgorde heb gezet en de CSS selectors
 
 https://github.com/WebTins/the-startup-responsive-interactive-website/blob/0b72b67bac8a15b1821cd5f5b0259c83fff15c57/styles/styles.css#L55-L80
 
+### Nesten van media queries
+Het nesten van media queries is erg belangrijk voor de structuur en het voorkomt ook overbodige regels aan code.
+
+Hier is een kleine voorbeeld hoe ik mijn media queries heb genest.
+
+https://github.com/WebTins/the-startup-responsive-interactive-website/blob/0b72b67bac8a15b1821cd5f5b0259c83fff15c57/styles/styles.css#L213-L220
+
+
 
 
 ### Volgorde
