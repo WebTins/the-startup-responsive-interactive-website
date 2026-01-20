@@ -414,7 +414,7 @@ main {
             }
 
             button {
-                width: 9.5625rem;
+                width: fit-content;
                 padding-left: 2rem;
                 padding-bottom: 1rem;
                 cursor: pointer;
