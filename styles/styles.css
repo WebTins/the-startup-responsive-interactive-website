@@ -313,15 +313,6 @@ main {
         font-size: var(--heading-size-l);
     }
 
-    /* MARK: Unieke ID Product */
-    .id-product {
-        display: inline-block;
-        font-size: var(--font-size-xs);
-        font-weight: var(--font-weight-medium);
-        color: var(--content-light-dark);
-        padding-left: 0.1rem;
-    }
-
     /* MARK: Product aantal sterren / reviews */
     .product-reviews {
         display: flex;
