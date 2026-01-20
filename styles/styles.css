@@ -348,15 +348,17 @@ main {
 
     /* MARK: Product beschrijving */
     .product-description {
-        padding: 1rem 0 2rem;
+        padding: 1rem 0 1rem;
         font-weight: var(--font-weight-medium);
     }
 
-    /* MARK: Product soort kleur */
-    .type-color-product {
-        display: flex;
-        justify-content: flex-start;
-        gap: 5rem;
+    /* MARK: Unieke ID Product */
+    .id-product {
+        display: inline-block;
+        font-size: var(--font-size-xs);
+        font-weight: var(--font-weight-medium);
+        color: var(--content-light-dark);
+        padding-left: 0.1rem;
         padding-bottom: 3rem;
     }
 
