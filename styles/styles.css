@@ -434,3 +434,55 @@ main {
         }
     }
 }
+
+footer {
+    background-color: var(--brand-color);
+    list-style: none;
+    text-decoration: none;
+    
+    .footer-options {
+        display: flex;
+        flex-direction: column;
+
+        .option-return {
+            padding-top: 2.5rem;
+        }
+
+        a {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: var(--content-light);
+            font-size: var(--font-size-l);
+            font-weight: var(--font-weight-semi-bold);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }   
+
+        .footer-link {
+            p {
+                font-size: var(--font-size-xs);
+            }
+
+            .download {
+                padding-top: 2rem;
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    .social-media {
+        display: flex;
+        gap: 0.5rem;
+        padding: 2rem 0px 2.1rem 2.25rem;
+
+        svg {
+            width: 2rem;
+        }
+    }
+
+    .logo-footer {
+        padding-left: 2rem;
+        padding-top: 5rem;
+    }
+}
