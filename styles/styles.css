@@ -222,10 +222,17 @@ main {
     /* Foto gallerij */
     .photo-gallery {
         display: flex;
+        gap: 10px;
         overflow: auto;
         scroll-snap-type: x mandatory;
         padding: 1rem;
         overscroll-behavior-x: contain;
+        
+        img {
+            width: 15rem;
+            height: 15rem;
+            object-fit: cover;
+        }
     }
 
     /* Product informatie */
