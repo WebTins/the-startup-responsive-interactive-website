@@ -10,9 +10,10 @@
     }
 }
 
-/* Custom properties */
+/* MARK: Custom properties */
+
 :root {
-    /* Kleuren */
+    /* MARK: Kleuren */
     --brand-color: hsl(234, 55%, 47%);
     --content-light: hsl(0, 0%, 100%);
     --content-dark: hsl(0, 0%, 0%);
@@ -25,11 +26,11 @@
     --background-alternative: hsl(353, 80%, 98%);
     --background-quiet: hsl(300, 5%, 96%);
 
-    /* Kleuren hover/active states */
+    /* MARK: Kleuren hover/active states */
     --button-hover: hsl(234, 55%, 43%);
     --button-active: hsl(234, 55%, 33%);
 
-    /* Typografie */
+    /* MARK: Typografie */
     --heading-size-l: 2rem;
     --heading-size-m: 1.6rem;
     --heading-size-s: 1.4rem;
@@ -46,13 +47,13 @@
     --font-weight-bold: 700;
 }
 
-/* Font */
+/* MARK: Font */
 @font-face {
     font-family: 'inter';
     src: url(/fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
 
-/* Meer info / Reclame */
+/* MARK: Meer info / Reclame */
 aside {
     display: flex;
     justify-content: center;
@@ -67,7 +68,7 @@ aside {
     }
 }
 
-/* Hoofd navigatie */
+/* MARK: Hoofd navigatie */
 .first-nav {
 
     .search-locations-button,
@@ -100,7 +101,7 @@ aside {
 
 }
 
-/* Hamburger menu icoon */
+/* MARK: Hamburger menu icoon */
 .hamburger-icon {
     position: relative;
     border-style: none;
@@ -109,7 +110,7 @@ aside {
     background-color: transparent;
 }
 
-/* Animatie hamburger menu icoon */
+/* MARK: Animatie hamburger menu icoon */
 @keyframes --disney-keyframe {
     0% {
         scale: 1;
@@ -138,21 +139,21 @@ aside {
     animation-iteration-count: ease-in-out;
 }
 
-/* Login en Winkelmand icoontjes */
+/* MARK: Login en Winkelmand icoontjes */
 .login-button,
 .cart-button {
     background-color: transparent;
     color: var(--content-dark);
 }
 
-/* Hamburger menu lijst */
+/* MARK: Hamburger menu lijst */
 .hamburger-list {
     display: none;
     justify-content: center;
     align-items: center;
 }
 
-/* Zoekbalk */
+/* MARK: Zoekbalk */
 .search {
     display: flex;
     justify-content: center;
@@ -178,7 +179,7 @@ aside {
     }
 }
 
-/* Secundaire navigatie */
+/* MARK: Secundaire navigatie */
 .second-nav-list {
     padding: 0;
     margin: 0.5rem;
@@ -209,17 +210,17 @@ aside {
     }
 }
 
-/* Main content */
+/* MARK: Main content */
 main {
 
-    /* Media query Tablet */
+    /* MARK: Media query Tablet */
     @media (width > 40em) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1em;
     }
 
-    /* Foto gallerij */
+    /* MARK: Foto gallerij */
     .photo-gallery {
         display: flex;
         gap: 10px;
@@ -235,12 +236,12 @@ main {
         }
     }
 
-    /* Product informatie */
+    /* MARK: Product informatie */
     .product-info {
         padding: 1rem;
     }
 
-    /* Product merk link */
+    /* MARK: Product merk link */
     .brand-link {
         text-decoration: none;
         font-size: var(--font-size-l);
@@ -248,12 +249,12 @@ main {
         color: var(--brand-color);
     }
 
-    /* Heading 1 */
+    /* MARK: Heading 1 */
     h1 {
         font-size: var(--heading-size-l);
     }
 
-    /* Unieke ID Product */
+    /* MARK: Unieke ID Product */
     .id-product {
         display: inline-block;
         font-size: var(--font-size-xs);
@@ -262,7 +263,7 @@ main {
         padding-left: 0.1rem;
     }
 
-    /* Product aantal sterren / reviews */
+    /* MARK: Product aantal sterren / reviews */
     .product-reviews {
         display: flex;
         padding-top: 1rem;
@@ -276,7 +277,7 @@ main {
         }
     }
 
-    /* Product prijs */
+    /* MARK: Product prijs */
     .product-price {
         padding: 4px 5px;
         color: var(--content-light);
@@ -286,13 +287,13 @@ main {
         font-weight: var(--font-weight-medium);
     }
 
-    /* Product beschrijving */
+    /* MARK: Product beschrijving */
     .product-description {
         padding: 1rem 0 2rem;
         font-weight: var(--font-weight-medium);
     }
 
-    /* Product soort kleur */
+    /* MARK: Product soort kleur */
     .type-color-product {
         display: flex;
         justify-content: flex-start;
@@ -300,7 +301,7 @@ main {
         padding-bottom: 3rem;
     }
 
-    /* Product maat */
+    /* MARK: Product maat */
     .variant-product {
         display: flex;
         flex-direction: column;
@@ -351,7 +352,7 @@ main {
         }
     }
 
-    /* In winkelmand knop */
+    /* MARK: In winkelmand knop */
     .shopping-cart-button {
         display: flex;
         justify-content: center;
@@ -379,7 +380,7 @@ main {
         }
     }
 
-    /* Extra product informatie */
+    /* MARK: Extra product informatie */
     .additional-product-info {
         display: flex;
         flex-direction: column;
@@ -393,7 +394,7 @@ main {
         }
     }
 
-    /* Bezorgmethodes */
+    /* MARK: Bezorgmethodes */
     .deliver-options {
         display: flex;
         flex-direction: column;
@@ -435,6 +436,7 @@ main {
     }
 }
 
+/* MARK: Footer */
 footer {
     background-color: var(--brand-color);
     list-style: none;
