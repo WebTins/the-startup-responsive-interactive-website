@@ -278,7 +278,7 @@ main {
 
     /* Product prijs */
     .product-price {
-        padding: 4px;
+        padding: 4px 5px;
         color: var(--content-light);
         background-color: var(--brand-color);
         width: fit-content;
