@@ -5,3 +5,18 @@ animateMe.addEventListener("click", bob)
 function bob() {
   animateMe.classList.toggle("disney-animation")
 }
+
+const hamburgerList = document.querySelector(".hamburger-menu")
+const openButton = document.querySelector(".hamburger-icon")
+const closeButton = document.querySelector(".close-menu")
+
+openButton.addEventListener('click', opened)
+closeButton.addEventListener('click', menuClosed)
+
+function opened () {
+  hamburgerList.classList.add('toggle-list')
+}
+
+function menuClosed () {
+  hamburgerList.classList.remove('toggle-list')
+}
