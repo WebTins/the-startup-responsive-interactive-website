@@ -322,11 +322,9 @@ main {
             padding: 0;
 
             .size-button-list {
-                display: grid;
                 grid-template-columns: repeat(5, 1fr);
 
                 .size-button {
-                    display: flex;
                     height: 5rem;
                     width: 5rem;
                     padding: 0;
