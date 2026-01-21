@@ -71,13 +71,17 @@ I decided to use the same hamburger menu but with a smoother and a bit slower an
 
 https://github.com/user-attachments/assets/bd69ed74-1084-428b-a721-a5e77f5261aa
 
+## Features
 
+In the photo gallery when you scroll or swipe and release. The browser will automatically pick the image that's closest to the middle. 
 
+To do this I used ***scroll-snap-align*** 
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+https://github.com/WebTins/the-startup-responsive-interactive-website/blob/ddd385c9186e36abeb6d35d74b0545ed0717134a/styles/styles.css#L348-L380
 
-## Bronnen
+## WCAG Audit
+
+[WCAG Audit](https://github.com/WebTins/the-startup-responsive-interactive-website/wiki/WCAG-Audit-Decathlon)
 
 ### Whitespace and indentation
 When it comes to code conventions, it is important to take whitespace into account to keep your code readable, and this is done by using indentation.  
@@ -113,8 +117,11 @@ Here is a small example of how I nested my media queries:
 When naming classes, it is important to me to use **kebab-case**, and all classes must be written in **lowercase** and in **English**. With JavaScript I use camelCase for the variables I make, this makes a great difference between CSS classes and JS variables when you're coding in Javascript.
 
 
+## Sources
 
-
+- [Gymshark](https://nl.gymshark.com/products/gymshark-crest-straight-leg-joggers-black-aw23)
+- [Decathlon](https://www.decathlon.nl/p/warm-en-comfortabel-thermoshirt-voor-skien-dames-bl100-zwart/302806/c382m8510031)
+- [MDN scroll-snap-align](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/scroll-snap-align)
 
 ## Licentie
 
