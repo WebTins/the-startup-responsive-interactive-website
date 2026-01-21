@@ -207,11 +207,6 @@ aside {
     }
 }
 
-
-
-
-
-
 /* MARK: Zoekbalk */
 .search {
     display: flex;
@@ -234,6 +229,10 @@ aside {
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        @media (width > 40em) {
+            width: 70vw;
         }
     }
 }
@@ -287,12 +286,27 @@ main {
         scroll-snap-type: x mandatory;
         padding: 1rem;
         overscroll-behavior-x: contain;
+
+        @media (width > 40em) {
+            flex-direction: column;
+            max-height: calc(100vh - 4rem);
+            scroll-snap-type: y mandatory;
+            overflow-y: auto;
+            overscroll-behavior-y: contain;
+        }
         
         img {
             width: 15rem;
             height: 15rem;
             object-fit: cover;
-            scroll-snap-align:center;
+            scroll-snap-align: center;
+
+            @media (width > 40em) {
+                width: auto;
+                height: auto;
+                object-fit: cover;
+                scroll-snap-align: center;
+            }
         }
     }
 
@@ -300,7 +314,6 @@ main {
     .product-info {
         padding: 1rem;
     }
-
     /* MARK: Product merk link */
     .brand-link {
         text-decoration: none;
