@@ -1,11 +1,27 @@
-Ontwerp en maak een responsive website voor een startup.
+# Decathlon
 
-De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-startup-responsive-interactieve-website/blob/main/docs/INSTRUCTIONS.md)
+Client: Product page Decathlon
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+Decathlon is an international sports retailer that has a great focus on online e-commerce. Teams in Amsterdam, Lille, and Paris work on the website and digital experience for the 16 largest countries. Decathlon not only works with sports products but also provides a travel platform called “Decathlon Travel”, where people can explore and book sports activities.
 
-## Beschrijving
+### Client's request
+
+Redesigning/building the media gallery of a product page. The media gallery was experienced as unaccessible and unclear. The images were not fully displayed within the slides, which made it appear broken or not functioning properly.
+
+## Design choices
+
+Before building the website I had a strong focus on designing the photo gallery first and that is why I have compared other websites that do have a more appealing and accesible photo gallery that I took inspiration of.
+
+The website I took inspiration from was Gymshark, a multinational retailer of sportsclothes where they have a photo gallery 
+
+**Desktop**
+
+
+
+
+
+
+
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages s🌐-->
@@ -15,37 +31,39 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 
 ## Bronnen
 
-## Code conventies
-Code conventies zijn erg belangrijk voor leesbaarheid en een goede structeer van code. 
+### Whitespace and indentation
+When it comes to code conventions, it is important to take whitespace into account to keep your code readable, and this is done by using indentation.  
+Therefore, I chose to always use tabs for indentation and to add one blank line after each selector.
 
-### Ademruimte en inspringen
-Bij code conventies is het belangrijk dat er rekening gehouden wordt met ademruimte om je code leesbaar te maken en dat doe je doormiddel van inspringen. 
-Daarom heb ik ervoor gekozen om bij het inspringen altijd tabs te gaan gebruiken en na elke selector 1 witregel.
+Here is an example of my HTML and CSS code where I applied whitespace:
 
-Hier is een voorbeeld van mijn HTML en CSS code waar ik ademruimte heb toegepast.
+- [HTML example](https://github.com/WebTins/the-startup-responsive-interactive-website/blob/0b72b67bac8a15b1821cd5f5b0259c83fff15c57/index.html#L114-L129)
+- [CSS example](https://github.com/WebTins/the-startup-responsive-interactive-website/blob/0b72b67bac8a15b1821cd5f5b0259c83fff15c57/styles/styles.css#L148-L153)
 
-https://github.com/WebTins/the-startup-responsive-interactive-website/blob/0b72b67bac8a15b1821cd5f5b0259c83fff15c57/index.html#L114-L129
+---
 
-https://github.com/WebTins/the-startup-responsive-interactive-website/blob/0b72b67bac8a15b1821cd5f5b0259c83fff15c57/styles/styles.css#L148-L153
+### Order and nesting of CSS selectors
+While styling, it is important that all CSS selectors are properly nested and placed in the correct order.  
+This improves readability and makes it easier to navigate when searching for selectors to style.
 
-### Volgorde en nesten van CSS selectors
-Tijdens het stijlen is het belangrijk dat alle CSS selectors goed genest zijn en ook in de juiste volgorde zitten.
-Dit zorgt voor leesbaarheid en maakt het navigeren makkelijker tijdens het zoeken naar selectors om te stijlen.
+Here is an example of how I organized my code and nested the CSS selectors:
 
-Hier is een voorbeeld hoe ik mijn code op volgorde heb gezet en de CSS selectors heb genest.
+- [CSS order and nesting example](https://github.com/WebTins/the-startup-responsive-interactive-website/blob/0b72b67bac8a15b1821cd5f5b0259c83fff15c57/styles/styles.css#L55-L80)
 
-https://github.com/WebTins/the-startup-responsive-interactive-website/blob/0b72b67bac8a15b1821cd5f5b0259c83fff15c57/styles/styles.css#L55-L80
+---
 
-### Nesten van media queries
-Het nesten van media queries is erg belangrijk voor de structuur en het voorkomt ook overbodige regels aan code.
+### Nesting of media queries
+Nesting media queries is very important for the structure of the code and also helps prevent unnecessary lines of code.
 
-Hier is een kleine voorbeeld hoe ik mijn media queries heb genest.
+Here is a small example of how I nested my media queries:
 
-https://github.com/WebTins/the-startup-responsive-interactive-website/blob/0b72b67bac8a15b1821cd5f5b0259c83fff15c57/styles/styles.css#L213-L220
+- [Media query nesting example](https://github.com/WebTins/the-startup-responsive-interactive-website/blob/0b72b67bac8a15b1821cd5f5b0259c83fff15c57/styles/styles.css#L213-L220)
 
-### Naamgeving
+---
 
-Bij naamgeving van de classes is het bij mij belangrijk dat er gebruik wordt gemaakt van kebab-cases en alle classes moeten in kleine letters geschreven worden in het Engels.
+### Naming conventions
+When naming classes, it is important to me to use **kebab-case**, and all classes must be written in **lowercase** and in **English**. With JavaScript I use camelCase for the variables I make, this makes a great difference between CSS classes and JS variables when you're coding in Javascript.
+
 
 
 
