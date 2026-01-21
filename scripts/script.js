@@ -1,4 +1,4 @@
-const animateMe = document.querySelector(".hamburger-icon")
+const animateMe = document.querySelector(".open-menu")
 
 animateMe.addEventListener("click", bob)
 
@@ -7,7 +7,7 @@ function bob() {
 }
 
 const hamburgerList = document.querySelector(".hamburger-menu")
-const openButton = document.querySelector(".hamburger-icon")
+const openButton = document.querySelector(".open-menu")
 const closeButton = document.querySelector(".close-menu")
 
 openButton.addEventListener('click', opened)
