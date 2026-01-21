@@ -56,7 +56,7 @@ For desktop I decided to make the photo gallery in 1 collumn that's sticky. This
 
 For the whole page:
 
-- Uses semantic HTML elements such as <form>, <input>, and <section>.
+- Uses semantic HTML elements such as `<form>`, `<input>`, and `<section>`.
 - Developed mobile-first, with @media queries for wider screens.
 
 ### Photo gallery mobile and desktop
