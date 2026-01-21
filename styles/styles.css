@@ -288,6 +288,8 @@ main {
         scroll-snap-type: x mandatory;
         padding: 1rem;
         overscroll-behavior-x: contain;
+        scrollbar-width: thin;
+        scrollbar-color: var(--content-light-dark) transparent;
 
         @media (width > 40em) {
             flex-direction: column;
