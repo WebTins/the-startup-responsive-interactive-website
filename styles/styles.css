@@ -220,7 +220,7 @@ aside {
         padding: 0.6em 2em;
         width: 85vw;
 
-        background-image: url("/assets/search-icon.svg");
+        background-image: url("./assets/search-icon.svg");
         background-repeat: no-repeat;
         background-position: 0.2em center;
 
